@@ -55,7 +55,7 @@ public class SodiumOptionsGUI extends Screen {
     private ControlElement<?> hoveredElement;
 
     public SodiumOptionsGUI(Screen prevScreen) {
-        super(new TranslationTextComponent("Sodium Options"));
+        super(new TranslationTextComponent("Sodium选项"));
 
         this.prevScreen = prevScreen;
 
@@ -85,7 +85,7 @@ public class SodiumOptionsGUI extends Screen {
 
         if (this.currentPage == null) {
             if (this.pages.isEmpty()) {
-                throw new IllegalStateException("No pages are available?!");
+                throw new IllegalStateException("没有可用的页面？！");
             }
 
             // Just use the first page for now
@@ -95,10 +95,10 @@ public class SodiumOptionsGUI extends Screen {
         this.rebuildGUIPages();
         this.rebuildGUIOptions();
 
-        this.undoButton = new FlatButtonWidget(new Dim2i(this.width - 211, this.height - 26, 65, 20), "Undo", this::undoChanges);
-        this.applyButton = new FlatButtonWidget(new Dim2i(this.width - 142, this.height - 26, 65, 20), "Apply", this::applyChanges);
-        this.closeButton = new FlatButtonWidget(new Dim2i(this.width - 73, this.height - 26, 65, 20), "Close", this::closeScreen);
-        this.donateButton = new FlatButtonWidget(new Dim2i(this.width - 130, this.height - 52, 100, 20), "Buy us a coffee!", this::openDonationPage);
+        this.undoButton = new FlatButtonWidget(new Dim2i(this.width - 211, this.height - 26, 65, 20), "撤消", this::undoChanges);
+        this.applyButton = new FlatButtonWidget(new Dim2i(this.width - 142, this.height - 26, 65, 20), "应用", this::applyChanges);
+        this.closeButton = new FlatButtonWidget(new Dim2i(this.width - 73, this.height - 26, 65, 20), "关闭", this::closeScreen);
+        this.donateButton = new FlatButtonWidget(new Dim2i(this.width - 130, this.height - 52, 100, 20), "赞助", this::openDonationPage);
         this.hideDonateButton = new FlatButtonWidget(new Dim2i(this.width - 28, this.height - 52, 20, 20), "x", this::hideDonationButton);
 
         if (SodiumClientMod.options().notifications.hideDonationButton) {
@@ -130,7 +130,7 @@ public class SodiumOptionsGUI extends Screen {
         try {
             options.writeChanges();
         } catch (IOException e) {
-            throw new RuntimeException("Failed to save configuration", e);
+            throw new RuntimeException("保存配置失败", e);
         }
 
         this.setDonationButtonVisibility(false);
@@ -240,7 +240,7 @@ public class SodiumOptionsGUI extends Screen {
         OptionImpact impact = option.getImpact();
 
         if (impact != null) {
-            tooltip.add(LanguageMap.getInstance().func_241870_a(new StringTextComponent(TextFormatting.GRAY + "Performance Impact: " + impact.toDisplayString())));
+            tooltip.add(LanguageMap.getInstance().func_241870_a(new StringTextComponent(TextFormatting.GRAY + "性能影响：" + impact.toDisplayString())));
         }
 
         int boxHeight = (tooltip.size() * 12) + boxPadding;

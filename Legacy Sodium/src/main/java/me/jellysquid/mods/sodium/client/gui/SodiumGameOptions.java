@@ -67,9 +67,9 @@ public class SodiumGameOptions {
     }
 
     public enum GraphicsQuality implements TextProvider {
-        DEFAULT("Default"),
-        FANCY("Fancy"),
-        FAST("Fast");
+        DEFAULT("普通"),
+        FANCY("高品质"),
+        FAST("快速");
 
         private final String name;
 
@@ -88,9 +88,9 @@ public class SodiumGameOptions {
     }
 
     public enum LightingQuality implements TextProvider {
-        HIGH("High"),
-        LOW("Low"),
-        OFF("Off");
+        HIGH("高"),
+        LOW("低"),
+        OFF("关");
 
         private final String name;
 
@@ -117,7 +117,7 @@ public class SodiumGameOptions {
             try (FileReader reader = new FileReader(path.toFile())) {
                 config = GSON.fromJson(reader, SodiumGameOptions.class);
             } catch (IOException e) {
-                throw new RuntimeException("Could not parse config", e);
+                throw new RuntimeException("无法解析配置", e);
             }
         } else {
             config = new SodiumGameOptions();
@@ -128,7 +128,7 @@ public class SodiumGameOptions {
         try {
             config.writeChanges();
         } catch (IOException e) {
-            throw new RuntimeException("Couldn't update config file", e);
+            throw new RuntimeException("无法更新配置文件", e);
         }
 
         return config;
@@ -140,7 +140,7 @@ public class SodiumGameOptions {
         if (!Files.exists(dir)) {
             Files.createDirectories(dir);
         } else if (!Files.isDirectory(dir)) {
-            throw new IOException("Not a directory: " + dir);
+            throw new IOException("不是目录： " + dir);
         }
 
         Files.write(this.configPath, GSON.toJson(this)

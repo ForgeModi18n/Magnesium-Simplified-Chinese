@@ -229,7 +229,7 @@ public class SodiumGameOptionPages {
 
         groups.add(OptionGroup.createBuilder()
                 .add(OptionImpl.createBuilder(int.class, vanillaOpts)
-                        .setName("Mipmap Levels")
+                        .setName("Mipmap 等级")
                         .setTooltip("控制方块模型材质的多级渐远纹理（Mipmap）的数量。较高的值可使远处的物体获得更好的渲染效果，但在渲染很多动态材质时可能产生严重的性能下降。")
                         .setControl(option -> new SliderControl(option, 0, 4, 1, ControlValueFormatter.multiplier()))
                         .setBinding((opts, value) -> opts.mipmapLevels = value, opts -> opts.mipmapLevels)

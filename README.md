@@ -1,14 +1,14 @@
 <img src="Legacy Sodium/src/main/resources/assets/sodium/icon.png" width="128">
 
-# Magnesium zh-cn
+# Magnesium Simplified Chinese
 
 ![GitHub license](https://img.shields.io/github/license/Someone-Else-Was-Taken/Periodic-Table-Reforged.svg)
 
-原仓库：[**Someone-Else-Was-Taken / Periodic-Table-Reforged**](https://github.com/Someone-Else-Was-Taken/Periodic-Table-Reforged)
+原仓库: [**Someone-Else-Was-Taken / Periodic-Table-Reforged**](https://github.com/Someone-Else-Was-Taken/Periodic-Table-Reforged)
 
-Magnesium和Sodium一样在1.16.x都是硬编码不支持本地化，本仓库修改代码将界面翻译。
+Magnesium 和 Sodium 一样在 1.16.x 都是硬编码不支持本地化，本仓库修改代码将界面翻译。
 
-注：Pupil-Magnesium为Magnesium支持Pupil的分支。
+注：Pupil-Magnesium 为 Magnesium 支持 Pupil 的分支。
 
 ### 特别鸣谢
 

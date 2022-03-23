@@ -1,34 +1,52 @@
-<img src="Legacy%20Sodium/src/main/resources/assets/sodium/icon.png" width="128"><img src="LegacyIris/src/main/resources/assets/iris/icon.png" width="128">
+<img src="Legacy Sodium/src/main/resources/assets/sodium/icon.png" width="128">
 
-# Periodic Table Reforged
+# Magnesium zh-cn
+
 ![GitHub license](https://img.shields.io/github/license/Someone-Else-Was-Taken/Periodic-Table-Reforged.svg)
-![GitHub issues](https://img.shields.io/github/issues/Someone-Else-Was-Taken/Periodic-Table-Reforged.svg)
 
-Old Repository for my ports of the CaffeineMC and Iris Modset. This will stay up until I copy the issues over to the new Repositories.
+原仓库：[**Someone-Else-Was-Taken / Periodic-Table-Reforged**](https://github.com/Someone-Else-Was-Taken/Periodic-Table-Reforged)
+
+Magnesium和Sodium一样在1.16.x都是硬编码不支持本地化，本仓库修改代码将界面翻译。
+
+注：Pupil-Magnesium为Magnesium支持Pupil的分支。
+
+### 特别鸣谢
+
+感谢Jellysquid和coderbot创建的原模组，感谢Someone-Else-Was-Taken将Sodium移植到Forge
+
+Jellysquid: [赞助](https://jellysquid.me/donate)
+
+coderbot: [赞助](https://www.patreon.com/coderbot) 
+
+------
+
+## 原README
+
+旧的仓库是我的CaffeineMC和Iris Modset 复刻。在我把这些问题复制到新的仓库之前，这个仓库会一直保留着。
 
 ---
 
-## CaffeineMC
+### CaffeineMC
 
-Sodium - https://www.curseforge.com/minecraft/mc-mods/sodium
+Sodium - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/sodium)
 
-Lithium - https://www.curseforge.com/minecraft/mc-mods/lithium
+Lithium - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/lithium)
 
-Phosphor - https://www.curseforge.com/minecraft/mc-mods/phosphor
+Phosphor - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/phosphor)
 
-Hydrogen - https://www.modrinth.com/mod/hydrogen
+Hydrogen - [Modrinth](https://www.modrinth.com/mod/hydrogen)
 
-## Iris Team
+### Iris 团队
 
-Iris - https://www.curseforge.com/minecraft/mc-mods/irisshaders
+Iris - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
 
-## Port Downloads
+### 下载
 
 https://www.curseforge.com/members/someoneelsewastaken/projects
 
 Sodium -> Magnesium
 
-Lithium -> Roadrunner by MaxNeedsSnacks (https://www.curseforge.com/minecraft/mc-mods/roadrunner)
+Lithium -> [Roadrunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner)  作者：MaxNeedsSnacks 
 
 Phosphor -> Sulfuric
 
@@ -38,18 +56,18 @@ Iris -> Pupil
 
 ---
 
-## Special Thanks & Support
+### 特别鸣谢和支持
 
-Thanks to Jellysquid and coderbot for creating the original mods. None of this would be possible without them.
+感谢Jellysquid和coderbot创建的原模组。如果你想支持周期表的发展，请务必支持原MOD的开发者。
 
-If you want to support the development of Periodic Table, be sure to support the developers of the original mods:
+Jellysquid: [赞助](https://jellysquid.me/donate)
 
-Jellysquid: https://jellysquid.me/donate
+coderbot: [赞助](https://www.patreon.com/coderbot) 
 
-coderbot: https://www.patreon.com/coderbot 
+### 联系我们（Magnesium作者）
 
-## Contact
+如果你需要联系我，请随时在CurseForge上给我发私信或者在Discord上给我留言。你可以在许多其他MOD服务器中找到我。
 
-If you need to contact me, feel free to send me a private message on CurseForge 
+------
 
-Or Message me on Discord. You can find me in many other Mod Servers.
+> 本README使用DeepL进行翻译
